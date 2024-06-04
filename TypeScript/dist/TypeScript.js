@@ -78,3 +78,21 @@ const func6 = (a, b, c = 25) => {
 };
 console.log(func6(12, 18));
 console.log(func6(10, 60, 90));
+const funca1 = (m) => {
+    return m;
+};
+console.log(funca1([1, 2, 3, 4, 5, 6, 7]));
+const funca2 = (...m) => {
+    return m;
+};
+console.log(funca2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+const funca3 = (...m) => {
+    return m;
+};
+console.log(funca3(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
+function OFUN(n) {
+    return 45;
+}
+const lol = function OFUN1(n) {
+    return n;
+};

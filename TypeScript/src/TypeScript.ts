@@ -113,3 +113,29 @@ const func6:funcType1 = (a, b, c = 25): number => {
 console.log(func6(12, 18));
 console.log(func6(10,60,90));
 
+//REST OPERATOR
+type FuncAr = (m: number[]) => number[];
+const funca1: FuncAr = (m) => {
+    return m;
+}
+console.log(funca1([1,2,3,4,5,6,7]));
+
+const funca2 = (...m:number[])=>{
+    return m;
+}
+console.log(funca2(1,2,3,4,5,6,7,8,9,10));
+
+type FuncAr1 = (...m:number[])=>number[];
+const funca3:FuncAr1 = (...m) => {
+    return m;
+}
+console.log(funca3(10,20,30,40,50,60,70,80,90,100));
+
+function OFUN (n: number): number {
+    return 45;
+}
+
+type OF1 = (...n: number[]) => number; 
+const lol: OF1 = function OFUN1 (n) {
+    return n;
+}
