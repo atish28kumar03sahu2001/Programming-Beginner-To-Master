@@ -96,3 +96,20 @@ const OBJ4: newObjj = {
     gender: false
 }
 console.log(OBJ4);
+
+//Function In JavaScript
+type funcType = (n: number, m: number, l?: number) => number;
+const func5: funcType = (n, m, l) => {
+    if(typeof l === "undefined")    return n * m;
+    else return n * m * l;
+}
+console.log(func5(10, 50));
+console.log(func5(50, 60, 70));
+
+type funcType1 = (n: number, m: number, l?: number) => number;
+const func6:funcType1 = (a, b, c = 25): number => {
+    return a * b * c;
+}
+console.log(func6(12, 18));
+console.log(func6(10,60,90));
+

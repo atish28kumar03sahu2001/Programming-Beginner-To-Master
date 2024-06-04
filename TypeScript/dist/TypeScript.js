@@ -65,3 +65,16 @@ const OBJ4 = {
     gender: false
 };
 console.log(OBJ4);
+const func5 = (n, m, l) => {
+    if (typeof l === "undefined")
+        return n * m;
+    else
+        return n * m * l;
+};
+console.log(func5(10, 50));
+console.log(func5(50, 60, 70));
+const func6 = (a, b, c = 25) => {
+    return a * b * c;
+};
+console.log(func6(12, 18));
+console.log(func6(10, 60, 90));
