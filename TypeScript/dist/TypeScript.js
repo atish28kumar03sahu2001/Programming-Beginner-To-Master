@@ -96,3 +96,20 @@ function OFUN(n) {
 const lol = function OFUN1(n) {
     return n;
 };
+const getData = (product) => {
+    console.log(product);
+    // product.id = "ASASAS" //It will show error because of readonly
+};
+const product1 = {
+    id: "01",
+    name: "Laptop",
+    stock: 50,
+    price: 100000,
+    photo: "SamplePhotoURL"
+};
+getData(product1);
+// const mode: themeMode = "ABCD"; // it will show error;
+const mode1 = "dark";
+const errorH = () => {
+    throw new Error();
+};

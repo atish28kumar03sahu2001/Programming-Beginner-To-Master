@@ -139,3 +139,41 @@ type OF1 = (...n: number[]) => number;
 const lol: OF1 = function OFUN1 (n) {
     return n;
 }
+
+//Function With Objects
+// interface productType {
+//     name:string, 
+//     stock:number, 
+//     price:number, 
+//     photo:string
+// }
+type productType = {
+    name:string, 
+    stock:number, 
+    price:number, 
+    photo:string
+    readonly id:string
+}
+type GetDataType = (product:productType) => void
+
+const getData: GetDataType = (product) => {
+    console.log(product);
+    // product.id = "ASASAS" //It will show error because of readonly
+}
+const product1: productType  = {
+    id: "01",
+    name:"Laptop", 
+    stock: 50, 
+    price: 100000, 
+    photo:"SamplePhotoURL"
+}
+getData(product1);
+
+//Never Type
+type themeMode = "Light" | "dark";
+// const mode: themeMode = "ABCD"; // it will show error;
+const mode1: themeMode = "dark";
+
+const errorH = (): never => {
+    throw new Error();
+}
