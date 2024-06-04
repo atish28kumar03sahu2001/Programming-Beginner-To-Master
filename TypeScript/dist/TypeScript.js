@@ -43,3 +43,25 @@ arr6.forEach(i => {
 });
 //Tupple Example
 let arr7 = [12, "A", 15, "B"];
+const OBJ1 = {
+    height: 5.5,
+    weight: 88,
+    gender: false
+};
+console.log(OBJ1);
+const OBJ2 = {
+    height: 5.5,
+    weight: 88,
+};
+console.log(OBJ2);
+const OBJ3 = {
+    name: "MAKS VOID",
+    age: 25,
+};
+console.log(OBJ3);
+const OBJ4 = {
+    name: "VOID MAKS1",
+    age: 24,
+    gender: false
+};
+console.log(OBJ4);

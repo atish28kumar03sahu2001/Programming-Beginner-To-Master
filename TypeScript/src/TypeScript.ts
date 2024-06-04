@@ -55,3 +55,44 @@ arr6.forEach(i => {
 
 //Tupple Example
 let arr7: [number, string, number, string] = [12,"A",15,"B"];
+
+//Objects In TypeScript
+type OBJ = {
+    height: number;
+    weight: number; 
+    gender?: boolean; //optional property
+}
+const OBJ1:OBJ = {
+    height: 5.5,
+    weight: 88,
+    gender: false
+}
+console.log(OBJ1);
+const OBJ2:OBJ = {
+    height: 5.5,
+    weight: 88,
+}
+console.log(OBJ2);
+/**************************************************/
+interface OBJJ {
+    name: string;
+    age: number;
+    gender?: boolean;
+}
+const OBJ3:OBJJ = {
+    name: "MAKS VOID",
+    age: 25,
+}
+console.log(OBJ3);
+
+interface newObjj extends OBJJ {
+    /*here we can add new property which will merge with the OBJJ*/
+    scolar?:boolean;
+    func?:() => void;
+}
+const OBJ4: newObjj = {
+    name: "VOID MAKS1",
+    age: 24,
+    gender: false
+}
+console.log(OBJ4);
