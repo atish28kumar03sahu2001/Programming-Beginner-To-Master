@@ -178,3 +178,8 @@ class Product1 {
 }
 const user1 = new Product1("Laptop", 15000, 50);
 console.log(`user1 : ${user1.getId()}, ${user1.name}, ${user1.price}, ${user1.stock}`);
+//TYPE ASSERTION //ADD IN GITHUB FROM HERE
+const aa = document.getElementById("btn");
+const bb = document.getElementById("btn1");
+const cc = document.getElementById("btn2");
+const img1 = document.getElementById("imgid");
