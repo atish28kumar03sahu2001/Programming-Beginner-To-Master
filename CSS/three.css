@@ -1,0 +1,1393 @@
+/*if you are using a downloadable font style prefer TrueType Font File then add this */
+html
+{
+    overflow-y: scroll;
+}
+body
+{
+    margin: 0;
+}
+@font-face
+{
+    font-family: abc; 
+    /*if you use two name like (abc def) then use ->  "" */
+    src: url('fonts/PressJobs.ttf');
+}
+
+#fir       /*ELEMENT SELECTOR ALL <P> TAG ARE STYLED. */
+{
+    font-size: 2rem;
+    color:red;          /*CSS SYNTAX*/
+}
+/*margin: top right bottom left*/
+/*CSS SELECTOR
+
+1. ELEMENT SELECTOR
+2. ID SELECTOR
+3. CLASS SELECTOR
+if you use all 3 selector at a time to a particular tab the id selector have more priority then class selector then element selector. if you use sam tag more than one time then the last use style tag have more priority.
+*/
+
+/*ID SELECTOR*/
+#p3
+{
+    color: blue;
+    font-size: 15px;
+}
+
+/*class selector*/
+.orange_text
+{
+    color: orange;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+
+/*COLORS IN CSS
+1. PREDEFINED COLOR NAME
+    ex: red, blue, green
+
+2. RGB
+    ex: black: rgb(0,0,0) white: rgb(255,255,255) red: rgb(255,0,0)
+        blue: rgb(0,0,255) green: rgb(0,255,0)
+
+3. RGBA (red, gree, blue, alpha) alpha parameters is a number 
+between 0.0(fully transparent) and 1.0(not transparent at all)
+    ex: rgba(255,99,71,0.5)
+
+4. HEX : #rrggbb    rr = red    gg = green  bb = blue hexadecimal values between 00 and ff
+    ex: red:#ff0000; black:#000000;   white:#ffffff;
+
+5. HSL : (hue, saturation, lightness) 
+hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue. 
+saturation is a percentage value, 0% means a shade of gray and 100% is the full color.
+lightness is also a percentage 0% is black, 50% is neither light or dark, 100% is white.
+    ex: hsl(0,100%,50%);
+
+6. HSLA : (hue, saturation, lightness, alpha)
+alpha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all).
+    ex: hsla(0,100%,50%,0.6);
+*/
+#clr
+{
+    color: darkmagenta; /*predefined */
+    color: rgb(10, 55, 123); /*rgb*/
+    color: rgba(221, 94, 175, 0.5); /*rgba*/
+    color: #557542; /*hex*/
+    color: hsl(189, 53%, 64%); /*hsl*/
+    color: hsla(350, 88%, 50%, 0.5); /*hsla*/
+}
+
+/*backgrounds
+background-repeat:no-repeat = no repeat of background
+background-repeat:repeat-x = repeat of x-axis background
+background-repeat:repeat-y = repeat of y-axis background
+background-repeat:repeat = repeat of both x and y axis background
+background-position: position of background (top, bottom, center, right [top, bottom], left[top, bottom])
+background-position: in px ex: 60px 40px;
+background-position: in percentage 50% 75%
+background-size : in px or in percentage
+background-attchment: scroll ; bg also scroll with content
+background-attchment: fixed ; bg fix but content scroll
+background-size : cover=cover the bg but it cut out some part of bg image
+background-size : contain bg image is not cut out by browser 
+*/
+#back
+{
+    background-color: rgb(130, 208, 211);
+    background-image: url('images/LM.jpg');
+    background-repeat: no-repeat;
+    background-position: 40% 75%;
+    background-size: 700px 700px;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*background: color image repeat attachment position*/
+    /*background-image: url(), url();
+      background-position: left-top, right-bottom;    
+    */  
+}
+#bg
+{
+    color: rgb(243, 247, 242);
+}
+
+/*body{
+    background-color: rgba(241, 193, 102, 0.89);
+} you can give back ground to your whole body of the html*/
+
+/*CSS BORDER
+border-style: solid; dotted; dashed; double; 
+groove; ridge; outset; inset; none;
+border-style: top right bottom left;
+border-width: top/bottom right/left ex: 5px 10px; you can give for all four in different measure.
+border-color: you can give four color for the four side of the border
+border-side-attribute: good feature
+border-radius: give radius to your border(%, px)
+*/
+#bor
+{
+    border-style: solid;
+    border-width: 5px 10px;
+    border-color: hsl(29, 58%, 28%);
+
+  /*  border: 5px dotted rgb(10, 233, 10);
+
+    border-top-style: solid;
+    border-top-width: 11px;
+    border-top-color: blue;*/
+
+    border-top-right-radius: 40px;
+
+}
+#der
+{
+    color: black;
+}
+/* CSS HEIGHT AND WIDTH
+if you tak percentage it will measure form the body percentage and take his measure if you take px what you give it will set the height and width
+*/
+#hw
+{
+    background-color: rgb(173, 173, 230);
+    /* height: 500px;
+    width: 70%;  */
+    max-width: 300px;
+    max-height: 600px;
+    min-width:250px;
+    min-height: 550px;
+}
+/*CSS PADDING : gap between content and border
+padding: 40px 60px; 40 = top and bottom 60= right and left
+*/
+#ding
+{
+    border: 2px solid red;
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30%;
+    padding-left: 40%; */
+
+    padding: 10px 30px 50px 70px;
+
+}
+#pad
+{
+    font-size: 25px;
+}
+/*CSS MARGIN: border and outer space of content
+*/
+#mar1
+{
+    border: 2px solid orange;
+    padding: 40px;
+    margin-top: 30px;
+    /* margin-right: 40px; */
+    margin-bottom: 50px;
+}
+#mar2
+{
+    border: 2px solid rgb(42, 143, 47);
+    padding: 40px;
+   /* margin-top: -20px;
+    margin-bottom: 20px; */
+
+    /* width:120px; 
+    margin: 20px auto; auto = center */
+
+    margin-top: 80px;
+
+}
+#mar3
+{
+    border: 2px solid rgb(88, 41, 218);
+    padding: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+/*CSS BOX MODEL
+WHEN YOU SET THE WIDTH AND HEIGHT PROPERTIES OF AN ELEMENTS WITH CSS, YOU JUST SET THE WIDTH AND HEIGHT OF THE CONTENT AREA. TO CLACULATE THE FULL SIZE OF AN ELEMENT YOU MUST ALSO ADD PADDING, BORDERS AND MARGINS.
+
+TOTAL ELEMENT WIDTH = WIDTH + LEFT PADDING + RIGHT PADDING + LEFT BORDER + RIGHT BORDER + LEFT MARGIN + RIGHT MARGIN
+
+TOTAL ELEMENT HEIGHT = HEIGHT + TOP PADDING + BOTTOM PADDING + TOP BORDER + BOTTOM BORDER + TOP MARGIN + BOTTOM MARGIN
+*/
+/*CSS TEXT*/
+#te
+{
+    border: 2px solid rgb(255, 0, 255);
+    width: 600px;
+    writing-mode: vertical-rl; /*vertical-lr/rl, horizontal-lr/rl*/
+}
+#xt
+{
+    color: rgb(0, 17, 255);
+   /* text-align: justify; *//*left, right, center, justify*/
+    /* direction: rtl; /*right to left language */
+    /* vertical-align: top; /*this is for image properties */
+    /*text-decoration: line-through;*/ /*underline, overline, line through*/
+    text-transform: capitalize;/*uppercase,lowercase, capitalize*/
+    /* line-height: 50px;
+    text-indent: 50px;
+    letter-spacing: 20px;
+    word-spacing: 200px;
+    white-space: nowrap; /*normal, pre, nowrap */
+    word-wrap: break-word;/*break-word*/
+} 
+#shadow
+{
+    font-size: 70px;
+    text-shadow: 5px 10px 8px rgb(252, 4, 4)
+
+}
+/*CSS LINKS*/
+a
+{
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 30px;
+
+}
+a:link
+{
+    color: rgb(16, 138, 67); /*color of the link when you first see*/
+}
+a:visited
+{
+    color: rgb(250, 114, 2); /*if you visted already that website*/
+}
+a:hover
+{
+    color: rgb(255, 0, 221); /*mouse hover on the content*/
+}
+a:active
+{
+    color: rgb(0, 195, 255); /*when you click on the site*/
+}
+/*CSS FONTS
+font-size = size of font;
+font-weight= bold, bolder, lighter, or some measure like(100)
+font-style = italic
+font-variant: uppercase but small sizes
+
+font extension = ttf, otf, woff
+*/
+#fo
+{
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#nt
+{
+    font-size: 30px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-style: italic; 
+    font-family: 'Signika', sans-serif;
+}
+#dfont /*downloadable font use*/
+{
+    font-size: 40px;
+    font-family: abc, 'Poppins', sans-serif;
+}
+/*CSS FONT UNITS
+WE USE LENGTH, WIDTH, HEIGHT, MARGIN, PADDING, FONT-SIZE.
+THERE ARE TWO TYPES OF UNITS IN CSS     1. ABSOLUTE     2. RELATIVE
+ABSOLUTE UNITS IN CSS:
+Cm, Mm, Inch, Px(1 inch = 96 px), Pt(1 inch = 72 pt), Pc(1 pc = 12 pt)
+
+RELATIVE UNIT IN CSS:
+Em, Rem, Vh, Vw, %
+
+Em: em is relative to the size of its direct parent
+Rem: rem is only relative to root (html tag) size
+Vh: 1% of view port height
+Vw: 1% of view port width
+% : relative to parent
+
+*/
+/* html{
+    font-size: 10px;
+} */
+#parent
+{
+    border: 1px solid red;
+    /* width: 10cm; */
+    /* width: 100mm; */
+    /* width: 5in; */
+    /* width: 500px; */
+    /* width: 500pt; */
+    /* width: 10pc; */
+
+    /* width: 800px; */
+    /* height: 50vh; for height
+    width: 50vw;     for width */
+
+    /* font-size: 4rem;  */
+
+    /* font-size: 5vw; */
+    margin-bottom: 50px;
+
+}
+#child
+{
+    border: 1px solid blue;
+    /* width: 50%; */
+    
+   /* font-size: 0.5em; /*multiply of parent font-size*/
+    /*font-size: 2em;*/
+    /*font-size: 2rem; /*multiply of html font-size*/
+
+    /* font-size: 2rem; */
+
+    font-size: 5vh; 
+
+    
+    
+}
+/*CSS CURSOR 
+cursor: all-scroll; cell; col-resize; crosshair; e-resize; grab; help;
+not-allowed; pointer; progress; wait; zoom-in; zoom-out;
+*/
+#cu
+{
+    border: 2px solid rgb(153, 240, 3);
+    cursor: zoom-out;
+    
+}
+/*CSS IMPORTANT*/
+#cu
+{
+    border: 2px solid rgb(65, 0, 245)!important;
+    cursor: zoom-out;
+    color: rgb(248, 7, 7);
+    
+}
+/*CSS BOX SHADOW*/
+#cu
+{
+    width: 500px;
+    background-color: rgb(85, 223, 165);
+    margin: 50px 50px;
+    padding: 30px;
+    /*box-shadw: x,y,blur, spread ratio, color*/
+    box-shadow: 10px 10px 7px 5px rgb(206, 92, 92) , -10px -10px 7px 5px rgb(50, 169, 206);
+
+}
+/*CSS OPACITY
+vary from 0 to 1
+*/
+#op
+{
+    border: 2px solid red;
+    background-color: green;
+    height: 500px;
+    width: 500px; 
+    margin-bottom: 60px;
+    opacity: 0.5;
+}
+#immg:hover
+{
+    opacity: 0.7;
+}
+#op2
+{
+    border: 2px solid orange;
+    margin-top: -60px;
+    height: 100px;
+    width: 600px;
+    background-color: lightgray;
+    margin-bottom: 60px;
+}
+/*CSS FILTER STYLE
+    blur(10px); brightness(60%); contrast(40%);
+    drop-shadow(hr, vr, blur, shadow color);
+    grayscale(100%); = for black and white picture
+    hue-rotate(120deg); invert(80%); opacity(60%);
+    saturate(10%); sepia(90%);
+
+*/
+#imgg
+{
+    filter: brightness(50%) contrast(40%);
+}
+/*CSS IMAGE SPRITES only for small icon type images*/
+#sprite
+{
+    height: 128px;
+    background-image: url('images/sprite.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -143px;
+    background-position: 0px -288px;
+}
+/*CSS GRADIENT STYLE
+1. LINEAR GRADIENT
+2. RADIAL GRADIENT
+*/
+#linear
+{
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    border: 2px solid gray;
+    /* background-image: linear-gradient(170deg, rgb(236, 133, 133),rgb(241, 130, 65)); */
+    background-image: radial-gradient(circle, red 20%, green 50%, blue 65%, orange 40%);
+}
+/*CSS OVERFLOW STYLE
+overflow: visible; hidden; auto;
+*/
+#over
+{
+    background-color: lightgreen;
+    border: 2px solid rgb(7, 109, 7);
+    height: 600px;
+    width: 500px;
+    margin-top: 60px;
+    /*overflow: scroll;*/
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: justify;
+    overflow: auto;
+
+}
+/*CSS RESIZABLE STYLE
+none; hr, vr, both only for block , scroll, auto, overflow, hidden
+*/
+#res
+{
+    margin-top: 40px;
+    resize: none;
+}
+#over
+{
+    resize: vertical;
+}
+/*CSS LISTS STYLE
+for ul -> list-style-type: none; disc, circle, square
+for ol -> upper-alpha; lower-alpha; upper-roman; lower-roman; decimal; decimal-leading-zero;
+
+list-style-position: inside;
+
+*/
+#list1
+{
+    list-style-type: square;
+    list-style-image: url('images/RIGHT.jpg');
+    list-style-position: inside;
+}
+#list2
+{
+    list-style-type: decimal;
+}
+li
+{
+    border: 1px solid black;    
+}
+/* ****CSS TABLE STYLE**** */
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 15px;
+    empty-cells: hide;
+    border-collapse: collapse;
+    table-layout: auto; /*don't prefer fixed*/
+    width: 100%;
+}
+caption
+{
+    border: 1px solid blue;
+    caption-side: bottom;
+}
+/* tr
+{
+    border: 1px solid red;
+}  no border propertiy ap[ply on tr*/
+th
+{
+    border: 1px solid purple;
+    height: 100px;
+    width: 25px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+td
+{
+    border: 1px solid red;
+    height: 80px;
+    width: 25px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    vertical-align: top;
+}
+/*CSS FUNCTION*/
+:root /*********************/
+{
+    --primary-color: rgb(251, 1, 218);
+    --btn-color:blue;
+    --text-color: black;
+    
+}
+#fun
+{
+    background-color: var(--primary-color);
+    height: 200px;
+    width: calc(100% - 200px);  
+}
+#ama
+{
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+}
+/*BOX SIZING
+box-sizing: content-box; = height width to content
+box-sizing: border-box; = height width to container
+*/
+#b1
+{
+    margin-top: 90px;
+    background-color: rgb(94, 218, 133);
+    height: 100px;
+    width: 600px;
+}
+#b2
+{
+    background-color: rgb(127, 127, 223);
+    height: 100px;
+    width: 600px;
+    padding: 50px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/* CSS INITIAL VS INHERIT 
+initial = bydefault color
+inherit = color of parent content
+*/
+#II
+{
+    color: green;
+    margin-bottom: 30px;
+}
+#clr1
+{
+    color: red;
+}
+#INITIAL
+{
+    color: initial;
+}
+#INHERIT
+{
+    color: inherit;
+}
+/*OBJECT-FIT IN CSS
+THIS IS APPLICABLE FOR IMAGE OR VIDEO.
+
+object-fit: contain; = it resize the aspect ration of image but it create some blank space in the container border.
+
+object-fit: fill; = it fill all the space till the border but it break the aspect ratio of the image.
+
+object-fit: cover; = it don't create space and don't break the aspect ration it take the actuall image and fit it so some part of picture are missing.
+*/
+#ofp
+{
+    border: 1px solid red;
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    object-position: top left;
+    margin-bottom: 30px;
+}
+
+/*CSS PSEUDO-CLASSES
+selector:pseudo-class{}
+example:
+a:link{}    a:hover{}
+li:first-child{} = list's first element
+li:last-child{} = list's last element
+li:nth-child(){} = list's any number element
+li:nth-child(odd){} = list's odd number child
+li:nth-child(even){} = list's even number child
+li:nth-child(3n + 0){} = list's 3*n + 0 , n = 0,1,2....
+li:nth-last-child(number){} = list's last number element 
+*/
+/* li:first-child
+{
+    color: blue;
+}
+li:last-child
+{
+    font-weight: 900;
+} */
+
+ /* li:nth-last-child(3n + 0)
+{
+ color: rgb(186, 2, 253);   
+}  */
+input:focus
+{
+    border: 5px solid blue;
+}
+/*CSS PSEUDO-ELEMENT
+selector::pseudo-element {}
+*/
+#pe::first-letter
+{
+    font-size: 90px;
+    color: red;
+}
+#pe::first-line
+{
+    color: blue;
+    font-size: 35 px;
+}
+#cspe::before
+{
+    content: url(images/demofavicon/favicon-32x32.png);
+}
+#cspe::after
+{
+    content: " HEADING ADDED AFTER";
+}
+::selection
+{
+    color: red;
+    background: yellow;
+}
+/*********** INTERMEDDIATE CSS ***********/
+/*CSS DISPLAY
+there are four properties in display
+1. BLOCK: 
+    block take whole length
+    DIV, P, H1-H6, form
+    1. new line
+    2. full width
+    3. height and width 
+
+
+2. INLINE:
+    inline also take whole length
+    <a>, <img>, <span>
+    1. not new line
+    2. no full width
+    3. no height and width 
+
+3. INLINE-BLOCK:
+    1. not new line
+    2. no full width
+    3. no height and width 
+
+
+4. NONE
+*/
+.display
+{
+    border: 2px solid blue;
+    height: 80px;
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+#dis1
+{
+    /* display: none; */ /*it cut out the space of previous one*/
+    visibility: hidden; /*it just hide the previous one*/
+}
+
+/*CSS POSITION PROPERTY
+there are four types of position property
+1. static = default
+2. relative
+3. fixed
+4. absolute = calculation starts from parent if parents is positioned.
+
+if postitioon = relative/fixed/absolute
+1. top
+2. bottom
+3. left
+4. right
+*/
+#PPP
+{
+    /* border: 2px solid black; */
+    padding: 40px;
+    width: 50%;
+    margin: 100px;
+    position: relative;    
+}
+#PP1
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(233, 119, 119);
+    display: inline-block;
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+
+    /*CSS LAYERS AND Z-INDEXX PROPERTY
+    z-index = if position = absolute/relative/fixed
+    */
+
+    position: relative; /*for z-index*/
+    z-index: 2;
+}
+#PP2
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(124, 124, 226);
+    display: inline-block;
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+
+    position: relative;  /*for z-index*/
+    top: 50px;
+    left: -50px;
+    z-index: 3;
+}
+#PP3
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(125, 231, 125);
+    display: inline-block;
+    /* position: fixed;
+    bottom: 10px;
+    right: 10px; */
+
+    position: relative;   /*for z-index*/
+    top: 100px;
+    left: -100px;
+    z-index: 1;
+}
+
+/*CSS FLOAT AND CLEAR PROPERTY*/
+#cfc1
+{
+    width: 100px;
+    height: auto;
+    float: right;
+    padding: 20px;
+}
+#cfc2
+{
+    width: 100px;
+    height: auto;
+    float: left;
+    padding: 20px;
+}
+/*navigation bar css start*/
+#NAVC
+{
+    background-color: rgb(25, 58, 187);
+    list-style-type: none;
+    border: 1px solid red;
+    overflow: auto;
+}
+.navd
+{
+ border: 1px solid red;
+}
+/*navigation bar css end*/
+#CFC
+{
+    border: 2px solid rgb(10, 180, 236);
+    overflow: auto;
+}
+#cfc3
+{
+    /* float: right; */
+    height: 100px;
+    width: 150px;
+    float: right;
+}
+#cfc4
+{
+    /* float: right; */
+    height: 100px;
+    width: 200px;
+    float: right;
+    clear: right;
+}
+#content
+{
+    width: 70%;
+    background-color: lightsalmon;
+    height: 100px;
+    float: right;
+}
+#sidebar
+{
+    width: 30%;
+    background-color: lightgreen;
+    height: 40px;
+    float: right;
+}
+#footer
+{
+    background-color: lightblue;
+    clear: both;
+}
+/********CSS 2D TRANSFORMS PROPERTY********/
+#twod1
+{
+    padding: 20px;
+    margin: 20px;
+}
+#tod1
+{
+    
+    text-decoration: none;
+    background-color: lightcoral;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 30px;
+   
+}
+#tod1:hover
+{
+    display: inline-block;
+   /* transform: translate(50px, 50px);*/
+    /*transform: rotate(30deg);*/
+    /*transform: scale(0.2,0.2);*/ /*width = scalex height= scaley*/
+}
+#tod1
+{
+    display: inline-block;
+   /* transform: skew(20deg, 10deg);*/ /*skewx = width skewy = height*/
+    transform-origin: 50% 10%;
+    transform: rotate(30deg);
+    /*transform: matrix(scalex(), skewy(), skewx(), scaley(), translatex(), translatey())*/
+}
+/********CSS 3D TRANSFORMS PROPERTY********/
+/*
+transform: perspective(100px) rotate();
+perspective-origin: 50%, 50%;
+*/
+
+#d3cover
+{
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+    margin: 300px;
+}
+#d3content
+{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    transform:perspective(300px) rotate3d(50, 50, 50, 30deg);
+    /* transform: perspective(300px) translate3d(30px, 30px, 30px); */
+    
+}
+/********CSS TRANSITION PROPERTY********/
+#tra1
+{ 
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 50px;
+    border: 1px solid blue;
+    display: inline-block;
+    transition-property: width, background-color; /*you can take all*/
+    transition-duration: 1s; /*second(s) or milisecond(ms)*/
+    /* transition-delay: 800ms; */
+    transition-timing-function: ease-in-out;
+}
+#tra1:hover
+{
+    /* width: 200px; */
+    background-color: green;
+
+}
+/********CSS ANIMATION PROPERTY********/
+@keyframes changecolor
+{
+    0%
+    {
+        background-color: red;
+    }
+    25%
+    {
+        background-color: blue;
+        width: 200px;
+    }
+    50%
+    {
+        background-color: green;
+    }
+    75%
+    {
+        background-color: lightpink;
+        height: 200px;
+    }
+    100%
+    {
+        background-color: violet;
+    }
+}/*you can use 0 to 100% also rather than from and to*/
+#ani
+{
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    margin-bottom: 300px;
+    animation-timing-function: ease-out;
+}
+#ani1
+{
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    margin-bottom: 300px;
+    animation-timing-function: linear;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */  
+} 
+@keyframes forani2
+{
+    0%
+    {
+        background-color: red;
+        border-radius: 10%;
+    }
+    10%
+    {
+        background-color: blue;
+        border-radius: 20%;
+    }
+    20%
+    {
+        background-color: green;
+        border-radius: 30%;
+    }
+    30%
+    {
+        background-color: yellow;
+        border-radius: 40%;
+    }
+    40%
+    {
+        background-color: pink;
+        border-radius: 50%;
+    }
+    50%
+    {
+        background-color: violet;
+        border-radius: 60%;
+    }
+    60%
+    {
+        background-color: orange;
+        border-radius: 70%;
+    }
+    70%
+    {
+        background-color: maroon;
+        border-radius: 80%;
+    }
+    80%
+    {
+        background-color: springgreen;
+        border-radius: 90%;
+    }
+    90%
+    {
+        background-color: grey;
+        border-radius: 100%;
+    }
+    100%
+    {
+        background-color: lightskyblue;
+        border-radius: 0%;
+    }
+}
+#ani2
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(32, 231, 168);
+    animation-name: forani2;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    margin-bottom: 300px;
+    animation-timing-function: linear;
+}
+/********* PRINT STYLE PROPERTY IN CSS *********/
+@media screen {
+    #psp
+    {
+        font-size: 20px;
+    }
+    #imgpsp
+    {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media print
+{
+    #psp
+    {
+        font-size: 50px;
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+    #imgpsp
+    {
+        width: 600px ;
+        height: 400px;      
+    }
+
+}
+/********** RESPONSIVE WEB DESIGN **********/
+
+/********** VIEW PORT AND META TAG PROPERTIE IN CSS **********/
+
+#vmimg
+{
+    height: 100px;
+    width: 300px;
+}
+
+/********** MEDIA QUERIES PROPERTIE IN CSS **********/
+/* MY BROWSER SIZE = (1536 * 714)
+#MQ
+{
+    width: 70%;
+    float: left;
+    background-color: red;
+    clear: right;
+    margin-bottom: 70px;
+}
+#MQ1
+{
+    width: 30%;
+    float: left;
+    background-color: blue;
+    clear: right;
+}
+#mq0
+{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mq1
+{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and(max-width: 768px) and (min-width: 400px){
+    #MQ{
+        width: 50%;  
+        color: red;
+    }
+    #MQ1{
+        width: 50%;
+        color: rgb(124, 133, 42);
+    }
+}
+@media screen and(max-width: 400px) {
+    #MQ{
+        width: 100%;
+        background-color: rgb(118, 7, 113);
+    }
+    #MQ1{
+        width: 100%;
+        background-color: rgb(35, 171, 89);
+    }
+} */
+/*
+img
+{
+    width: 100%;
+    height: auto;
+}
+video
+{
+    width: 100%;
+    height: auto;  
+}
+bootstrap
+pure css
+skleten css
+foundation css
+*/
+
+/********** ADVANCED SELECTOR IN CSS ****************/
+/*BASIC SELECTORS:
+1. element selector
+2. id selector(#)
+3. class selector(.)
+4. pseudo class(:) and pseudo element(::)
+
+advanced selector:
+5. attribute selector
+6. universal selector(*{})
+7. combinator selector
+    7.1 descendant combinatory (child at any stage)
+        .red-p span{}
+    7.2 child combinatory (direct child)
+        .red-p > span{}
+    7.3 adjacent combinatory (right after sibling)
+        .red-p+h1{}
+    7.4 general sibling combinatory (all sibling)
+        .red p~h1 {}
+    7.5 general sibling combinatory (right after sibling)
+        .red-p,h1 {}
+*/
+
+/*CSS SPECIFICITY PROPERTY*/
+/*
+QUESTION:
+IF ONE ELEMENT IS STYLED BY MORE THAN ONE RULE, WHICH STYLE WILL BE APPLICABLE?
+ANSWER:
+MORE SPECIFIC RULE WILL GET MORE VALUE.
+*** !IMPORTANT WILL OVERRIDE EVERY THING
+*** INLINE CAN OVERRIDE EVERYTHING EXPECT !IMPORTANT
+*** EXTERNAL WILL WORK ACCORDING TO SPECIFICITY
+SPECIFICITY RULE:
+ID SELECTOR (#) HAS HIGHEST VALUE.
+UNIVERSAL SELECTOR(*) HAS LOWEST VALUE.
+
+SPECIFICITY RULE TRICK(POINT SYSTEM)
+1. 10,000 POINT TO !IMPORTANT.
+2. 1000 TO ONLINE.
+3. 100 TO ID.
+4. 10 TO CLASS, ATTRIBUTE OR PSEUDO-CLASS
+5. 1 FOR ELEMENT SELECTOR AND PSEUDO-ELEMENTS
+6. 0 TO UNIVERSAL SELECTOR
+
+IF SOME RULE WRITTEN TWO OR ORE TIMES IN EXTERNAL SHEET THAN LAST WILL BE APPLICABLE.
+*/
+
+/*CSS MULTIPLE COLUMNS PROPERTY*/
+#mcp1
+{
+    column-count: 3;
+    column-gap: 50px;
+    column-rule-style: double;
+    text-align: justify;
+    column-rule-width: 5px;
+    column-rule-color: blue;
+    column-width: 300px;
+    margin-bottom: 50px;
+}
+#mcp1_1
+{
+    column-span: all;
+   
+}
+/************CSS FLEXBOX PROPERTY*****************/
+/*
+flex-direction: row;
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse;
+
+flex-wrap: nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+
+flex-flow: row wrap;
+
+justify-content: center;
+justify-content: flex-start; from left side
+justify-content: flex-end; from right side
+justify-content: space-around;
+justify-content: space-between;
+
+align-items: center;
+align-items: flex-start;
+align-items: flex-end;
+align-items: stretch;
+
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+align-content: flex-start;
+align-content: flex-end;
+*/
+.flex_c
+{
+    background: indianred;
+    display: flex;
+    height: 300px;
+    margin-bottom: 80px;
+}
+.flexch
+{
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    text-align: center; 
+}
+/*
+order: any number; order:1;
+flex-grow: any number ;flex-grow: 1;
+flex-shrink: any number ratio; flex-shrink: 5;
+flex-basis: initial width; flex-basis: 300px;
+align-self: flex-start; center; flex-end;
+*/
+#fbb1
+{
+    align-self: flex-start;
+}
+#fbb2
+{
+    align-self: center;
+}
+#fbb3
+{
+    align-self: flex-end;
+}
+/******************** CSS GRID PROPERTY ********************/
+/*
+CSS GRID IS THE NEW LAYOUT MODEL IN CSS
+FROM OCT 2017 ALL MAJOR BROWSER STARTED SUPPORTING CSS GRID 
+
+BOTH FLEXBOX AND GRID HAS ITS OWN IMPORTANCE AND SHOULD BE USED FOR DESIGNING A WEB PAGE.
+GRID WORK FOR 2 DIMENSIONAL ALIGNMENT
+FLEXBOX IS GOOD FOR SPACE DISTRIBUTION.
+
+the vertical lines of grid items are called as grid columns.
+the horizontal lines of grid items are called rows.
+the spaces between each column/row are called gaps.
+the lines between columns are called column lines.
+the lines between rows are called row lines.
+*/
+/*
+display: grid;
+display: inline-grid;
+grid-template-columns: 200px 400px;
+grid-template-columns: auto auto auto;
+grid-template-columns: auto 50% auto ;
+grid-template-rows: 100px 200px auto;
+
+
+grid-template-columns: 200px 300px 200px ;
+grid-template-rows: 100px 200px auto;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+
+justify-content: start;
+justify-content: end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-content: start;
+align-content: end;
+align-content: center;
+align-content: space-around;
+align-content: space-between;
+align-content: space-evenly;
+
+*/
+.classgrid
+{
+    background-color: rgb(48, 164, 202);
+    padding: 20px;
+  
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header' 
+    'menu main main main right right' 
+    'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    
+    /* grid-template-columns: 200px 300px 200px ;
+    /* grid-template-rows: 100px 200px auto; */
+   /* grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly; */
+
+    /*LAYOUT DESIGN*/
+    
+}
+.csg
+{
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/* #idg1
+{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* grid-column: 1/3; */
+    /* grid-column: 1/span 2; 
+}*/
+/* 
+#idg3
+{
+    /* grid-row-start: 2;
+    grid-row-end: 5; */
+
+    /* grid-row: 2/5; */
+
+    /* grid-row: 2/ span 3; 
+} */
+/*#idg5
+{
+    /* grid-area: 1/2/4/5;    
+
+    grid-area: 1/2/span 2/span 3;
+
+}*/
+/*LAYOUT DESIGN*/
+#idg1
+{
+    grid-area: header;
+}
+#idg2
+{
+    grid-area: menu;
+}
+#idg3
+{   
+    grid-area: main;
+}
+#idg4
+{
+    grid-area: right;
+}
+#idg5
+{
+    grid-area: footer;
+}
