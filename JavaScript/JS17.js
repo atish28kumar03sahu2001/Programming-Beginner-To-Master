@@ -1,0 +1,4 @@
+let minFloat = 0.000000000000000000000000000000000000000000000000005;
+console.log(minFloat);
+let maxFloat =  1.7976931348623157e308;
+console.log(maxFloat);
