@@ -1,4 +1,4 @@
-//Assignment Operator
+//Arithmetic Operator
 console.log(100 + 200);
 console.log(200 - 400);
 console.log(300 * 150);
