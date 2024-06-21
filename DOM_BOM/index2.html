@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-BOM</title>
+</head>
+<body>
+    <input type="text" onkeydown="Handlekeydown(event)">
+
+    <input type="text" onkeyup="handlekeyup(event)">
+
+    <script>
+        function Handlekeydown(event){
+            console.log(`keydown : ${event.key}`);
+        }
+        function handlekeyup(event){
+            console.log(`keyup : ${event.key}`);
+        }
+    </script>
+</body>
+</html>

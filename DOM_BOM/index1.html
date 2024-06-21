@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-BOM</title>
+</head>
+<body>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+
+    <div oncontextmenu="alert('Right Click Detected!'); return false;">
+        Right Click Me!
+    </div>
+
+    <p ondblclick="alert('Paragraph Double-Click!')">
+        Double-Click This Paragraph
+    </p>
+
+    <button onmousedown="alert('Mouse Button Down!')">Press Mouse Button</button>
+
+    <button onmouseup="alert('Mouse Button Up!')">Release Mouse Button</button>
+
+    <button onmouseover="this.style.backgroundColor='yellow'">Hover Me!</button>
+
+    <div onmouseout="this.style.backgroundColor='green'">
+        Hover Out Of Me
+    </div>
+</body>
+</html>
