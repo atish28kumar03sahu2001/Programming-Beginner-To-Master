@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="parent" style="padding: 20px; background-color: lightblue;">
+    Parent
+    <button id="child">Child</button>
+  </div>
+  <script>
+    document.getElementById('parent').addEventListener('click', function() {
+      alert('Parent clicked!');
+    });
+
+    document.getElementById('child').addEventListener('click', function(event) {
+      alert('Child clicked!');
+      event.stopPropagation(); // Uncomment to stop bubbling
+    });
+  </script>
+</body>
+</html>
