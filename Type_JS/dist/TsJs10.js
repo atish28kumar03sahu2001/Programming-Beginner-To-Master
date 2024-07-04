@@ -1,22 +1,22 @@
 "use strict";
 //Function
-function demo1() {
+function demo11() {
     console.log("Demo1 Function");
 }
-demo1();
-function demo2() {
+demo11();
+function demo22() {
     return 20 + 50;
 }
-console.log(demo2());
+console.log(demo22());
 //Arrow Function
-let demo3 = () => {
+let demo33 = () => {
     console.log("Arrow Demo Function");
 };
-demo3();
-let demo4 = (a, b) => {
+demo33();
+let demo44 = (a, b) => {
     return a * b;
 };
-console.log(demo4(50, 70));
+console.log(demo44(50, 70));
 //SetTimeout Function
 setTimeout(() => {
     console.log("Output Will Display After 3 Second");

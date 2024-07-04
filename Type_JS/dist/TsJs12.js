@@ -1,12 +1,12 @@
 "use strict";
 //Higher Order Function
-function greet(name, formatter) {
+function greett(name, formatter) {
     return formatter(name);
 }
 function simplegreet(name) {
     return `Hello ${name}`;
 }
-console.log(greet("Maks Void", simplegreet));
+console.log(greett("Maks Void", simplegreet));
 //First Order Function
 function add(a, b) {
     return a + b;

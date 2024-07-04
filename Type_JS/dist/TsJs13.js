@@ -9,12 +9,12 @@ function curryAdd(a) {
 }
 console.log(curryAdd(1)(2)(3));
 //Memorization
-function fibo(n) {
+function fibo1(n) {
     if (n <= 1)
         return n;
     return fibo(n - 1) + fibo(n - 2);
 }
-console.log(fibo(10));
+console.log(fibo1(10));
 //Thunk In JavaScript
 const addd = (a, b) => () => a + b;
 const addT = addd(5, 10);

@@ -1,11 +1,11 @@
 //Higher Order Function
-function greet(name: string, formatter: Function): Function {
+function greett(name: string, formatter: Function): Function {
     return formatter(name);
 }
 function simplegreet(name:string):string {
     return `Hello ${name}`;
 }
-console.log(greet("Maks Void",simplegreet));
+console.log(greett("Maks Void",simplegreet));
 
 //First Order Function
 function add(a:number,b:number): number {

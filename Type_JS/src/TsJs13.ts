@@ -9,11 +9,11 @@ function curryAdd(a:number): Function {
 console.log(curryAdd(1)(2)(3));
 
 //Memorization
-function fibo(n:number): any {
+function fibo1(n:number): any {
     if(n <= 1) return n;
     return fibo(n - 1) + fibo(n - 2);
 }
-console.log(fibo(10));
+console.log(fibo1(10));
 
 //Thunk In JavaScript
 const addd = (a:number,b:number):Function => ():number => a + b;

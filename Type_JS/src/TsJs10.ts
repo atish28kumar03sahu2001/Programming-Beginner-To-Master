@@ -1,24 +1,24 @@
 //Function
-function demo1 (): void {
+function demo11 (): void {
     console.log("Demo1 Function");
 }
-demo1();
+demo11();
 
-function demo2 (): number {
+function demo22 (): number {
     return 20 + 50;
 }
-console.log(demo2());
+console.log(demo22());
 
 //Arrow Function
-let demo3 = (): void => {
+let demo33 = (): void => {
     console.log("Arrow Demo Function");
 }
-demo3();
+demo33();
 
-let demo4 = (a: number, b: number): number => {
+let demo44 = (a: number, b: number): number => {
     return a * b;
 }
-console.log(demo4(50, 70));
+console.log(demo44(50, 70));
 
 //SetTimeout Function
 setTimeout((): void =>{
