@@ -1,0 +1,382 @@
+[
+  {
+    "productId": 1,
+    "productName": "Product A",
+    "productPrice": 29.99,
+    "productQuantity": 100,
+    "colors": ["Red", "Blue"],
+    "reviews": {
+      "1star": 5,
+      "2star": 3,
+      "3star": 10,
+      "4star": 25,
+      "5star": 50,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 2,
+    "productName": "Product B",
+    "productPrice": 49.99,
+    "productQuantity": 50,
+    "colors": ["Green", "Yellow", "Black"],
+    "reviews": {
+      "1star": 2,
+      "2star": 6,
+      "3star": 15,
+      "4star": 40,
+      "5star": 30,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 3,
+    "productName": "Product C",
+    "productPrice": 19.99,
+    "productQuantity": 150,
+    "colors": ["Blue", "White"],
+    "reviews": {
+      "1star": 8,
+      "2star": 10,
+      "3star": 20,
+      "4star": 30,
+      "5star": 25,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 4,
+    "productName": "Product D",
+    "productPrice": 39.99,
+    "productQuantity": 200,
+    "colors": ["Red", "Black", "Gray"],
+    "reviews": {
+      "1star": 1,
+      "2star": 4,
+      "3star": 14,
+      "4star": 28,
+      "5star": 46,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 5,
+    "productName": "Product E",
+    "productPrice": 59.99,
+    "productQuantity": 80,
+    "colors": ["Yellow", "Purple"],
+    "reviews": {
+      "1star": 3,
+      "2star": 7,
+      "3star": 18,
+      "4star": 22,
+      "5star": 43,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 6,
+    "productName": "Product F",
+    "productPrice": 34.99,
+    "productQuantity": 60,
+    "colors": ["Green", "Blue", "Orange"],
+    "reviews": {
+      "1star": 2,
+      "2star": 5,
+      "3star": 19,
+      "4star": 24,
+      "5star": 43,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 7,
+    "productName": "Product G",
+    "productPrice": 22.99,
+    "productQuantity": 120,
+    "colors": ["Black", "Gray"],
+    "reviews": {
+      "1star": 3,
+      "2star": 6,
+      "3star": 15,
+      "4star": 35,
+      "5star": 34,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 8,
+    "productName": "Product H",
+    "productPrice": 44.99,
+    "productQuantity": 30,
+    "colors": ["Red", "Blue", "White"],
+    "reviews": {
+      "1star": 1,
+      "2star": 3,
+      "3star": 10,
+      "4star": 40,
+      "5star": 39,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 9,
+    "productName": "Product I",
+    "productPrice": 15.99,
+    "productQuantity": 90,
+    "colors": ["Green", "Yellow"],
+    "reviews": {
+      "1star": 4,
+      "2star": 8,
+      "3star": 14,
+      "4star": 20,
+      "5star": 47,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 10,
+    "productName": "Product J",
+    "productPrice": 27.99,
+    "productQuantity": 110,
+    "colors": ["Blue", "Purple"],
+    "reviews": {
+      "1star": 5,
+      "2star": 4,
+      "3star": 18,
+      "4star": 25,
+      "5star": 41,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 11,
+    "productName": "Product K",
+    "productPrice": 49.99,
+    "productQuantity": 70,
+    "colors": ["Red", "Blue", "Yellow"],
+    "reviews": {
+      "1star": 2,
+      "2star": 5,
+      "3star": 15,
+      "4star": 30,
+      "5star": 41,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 12,
+    "productName": "Product L",
+    "productPrice": 32.99,
+    "productQuantity": 95,
+    "colors": ["Green", "Gray"],
+    "reviews": {
+      "1star": 3,
+      "2star": 6,
+      "3star": 13,
+      "4star": 33,
+      "5star": 38,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 13,
+    "productName": "Product M",
+    "productPrice": 39.99,
+    "productQuantity": 130,
+    "colors": ["Yellow", "Blue"],
+    "reviews": {
+      "1star": 4,
+      "2star": 9,
+      "3star": 11,
+      "4star": 29,
+      "5star": 40,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 14,
+    "productName": "Product N",
+    "productPrice": 25.99,
+    "productQuantity": 40,
+    "colors": ["Red", "White"],
+    "reviews": {
+      "1star": 2,
+      "2star": 7,
+      "3star": 17,
+      "4star": 30,
+      "5star": 37,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 15,
+    "productName": "Product O",
+    "productPrice": 42.99,
+    "productQuantity": 85,
+    "colors": ["Green", "Purple", "Black"],
+    "reviews": {
+      "1star": 1,
+      "2star": 5,
+      "3star": 16,
+      "4star": 28,
+      "5star": 43,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 16,
+    "productName": "Product P",
+    "productPrice": 28.99,
+    "productQuantity": 115,
+    "colors": ["Red", "Blue", "Yellow"],
+    "reviews": {
+      "1star": 3,
+      "2star": 6,
+      "3star": 14,
+      "4star": 25,
+      "5star": 45,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 17,
+    "productName": "Product Q",
+    "productPrice": 33.99,
+    "productQuantity": 55,
+    "colors": ["Black", "Gray"],
+    "reviews": {
+      "1star": 2,
+      "2star": 8,
+      "3star": 12,
+      "4star": 35,
+      "5star": 36,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  },
+  {
+    "productId": 18,
+    "productName": "Product R",
+    "productPrice": 19.99,
+    "productQuantity": 140,
+    "colors": ["Blue", "White", "Green"],
+    "reviews": {
+      "1star": 5,
+      "2star": 4,
+      "3star": 15,
+      "4star": 28,
+      "5star": 41,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Z",
+      "companyLocation": "Chicago, USA"
+    }
+  },
+  {
+    "productId": 19,
+    "productName": "Product S",
+    "productPrice": 47.99,
+    "productQuantity": 75,
+    "colors": ["Red", "Blue", "Black"],
+    "reviews": {
+      "1star": 1,
+      "2star": 5,
+      "3star": 18,
+      "4star": 33,
+      "5star": 36,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company X",
+      "companyLocation": "New York, USA"
+    }
+  },
+  {
+    "productId": 20,
+    "productName": "Product T",
+    "productPrice": 21.99,
+    "productQuantity": 100,
+    "colors": ["Green", "Yellow"],
+    "reviews": {
+      "1star": 3,
+      "2star": 7,
+      "3star": 10,
+      "4star": 40,
+      "5star": 33,
+      "totalReviewCount": 93
+    },
+    "company": {
+      "companyName": "Company Y",
+      "companyLocation": "Los Angeles, USA"
+    }
+  }
+]
