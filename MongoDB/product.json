@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Laptop",
+        "price": 999.99,
+        "quantity": 10,
+        "description": "High-performance laptop with 16GB RAM and 512GB SSD."
+    },
+    {
+        "name": "Smartphone",
+        "price": 699.99,
+        "quantity": 20,
+        "description": "Latest model smartphone with 8GB RAM and 128GB storage."
+    },
+    {
+        "name": "Wireless Earbuds",
+        "price": 129.99,
+        "quantity": 50,
+        "description": "Noise-cancelling wireless earbuds with charging case."
+    },
+    {
+        "name": "Smartwatch",
+        "price": 199.99,
+        "quantity": 15,
+        "description": "Water-resistant smartwatch with heart rate monitor."
+    },
+    {
+        "name": "Tablet",
+        "price": 399.99,
+        "quantity": 25,
+        "description": "10-inch tablet with 64GB storage and stylus support."
+    },
+    {
+        "name": "Gaming Console",
+        "price": 499.99,
+        "quantity": 5,
+        "description": "Next-gen gaming console with 1TB storage."
+    },
+    {
+        "name": "Bluetooth Speaker",
+        "price": 59.99,
+        "quantity": 30,
+        "description": "Portable Bluetooth speaker with 10-hour battery life."
+    },
+    {
+        "name": "Monitor",
+        "price": 249.99,
+        "quantity": 12,
+        "description": "27-inch 4K monitor with adjustable stand."
+    },
+    {
+        "name": "Keyboard",
+        "price": 49.99,
+        "quantity": 40,
+        "description": "Mechanical keyboard with RGB backlighting."
+    },
+    {
+        "name": "Mouse",
+        "price": 29.99,
+        "quantity": 60,
+        "description": "Wireless mouse with ergonomic design."
+    },
+    {
+        "name": "External Hard Drive",
+        "price": 89.99,
+        "quantity": 18,
+        "description": "1TB external hard drive with USB 3.0."
+    },
+    {
+        "name": "Webcam",
+        "price": 39.99,
+        "quantity": 25,
+        "description": "HD webcam with built-in microphone."
+    },
+    {
+        "name": "Printer",
+        "price": 149.99,
+        "quantity": 8,
+        "description": "All-in-one printer with wireless connectivity."
+    },
+    {
+        "name": "Router",
+        "price": 79.99,
+        "quantity": 22,
+        "description": "Dual-band wireless router with 4 Ethernet ports."
+    },
+    {
+        "name": "Smart TV",
+        "price": 799.99,
+        "quantity": 7,
+        "description": "55-inch 4K Smart TV with HDR support."
+    },
+    {
+        "name": "Camera",
+        "price": 549.99,
+        "quantity": 10,
+        "description": "Digital camera with 24MP sensor and 4K video recording."
+    },
+    {
+        "name": "Headphones",
+        "price": 89.99,
+        "quantity": 35,
+        "description": "Over-ear headphones with noise-cancellation."
+    },
+    {
+        "name": "Fitness Tracker",
+        "price": 59.99,
+        "quantity": 20,
+        "description": "Fitness tracker with heart rate and sleep monitoring."
+    },
+    {
+        "name": "Drone",
+        "price": 399.99,
+        "quantity": 6,
+        "description": "4K drone with 3-axis gimbal and GPS."
+    },
+    {
+        "name": "Projector",
+        "price": 299.99,
+        "quantity": 10,
+        "description": "1080p projector with 2000 lumens brightness."
+    },
+    {
+        "name": "VR Headset",
+        "price": 249.99,
+        "quantity": 15,
+        "description": "Wireless VR headset with 6DoF tracking."
+    },
+    {
+        "name": "E-reader",
+        "price": 129.99,
+        "quantity": 25,
+        "description": "E-reader with 6-inch e-ink display and backlight."
+    },
+    {
+        "name": "Electric Scooter",
+        "price": 499.99,
+        "quantity": 10,
+        "description": "Electric scooter with 20-mile range and foldable design."
+    },
+    {
+        "name": "Smart Light Bulb",
+        "price": 19.99,
+        "quantity": 50,
+        "description": "Smart LED light bulb with Wi-Fi control."
+    },
+    {
+        "name": "Action Camera",
+        "price": 299.99,
+        "quantity": 12,
+        "description": "Action camera with 4K recording and waterproof case."
+    },
+    {
+        "name": "Portable Charger",
+        "price": 39.99,
+        "quantity": 40,
+        "description": "10000mAh portable charger with fast charging."
+    },
+    {
+        "name": "Wireless Charger",
+        "price": 29.99,
+        "quantity": 35,
+        "description": "Wireless charging pad with fast charge support."
+    },
+    {
+        "name": "Smart Thermostat",
+        "price": 199.99,
+        "quantity": 8,
+        "description": "Smart thermostat with remote control and scheduling."
+    },
+    {
+        "name": "Coffee Maker",
+        "price": 79.99,
+        "quantity": 20,
+        "description": "Automatic coffee maker with programmable timer."
+    },
+    {
+        "name": "Air Purifier",
+        "price": 149.99,
+        "quantity": 15,
+        "description": "HEPA air purifier with smart air quality sensor."
+    }
+]

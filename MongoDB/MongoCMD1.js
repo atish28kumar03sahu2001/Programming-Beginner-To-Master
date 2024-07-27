@@ -34,6 +34,3 @@ db.<Collection-Name>.drop()
 
 //You won't see a database listed in the output of the show dbs command until that database contains at least one collection with data in it.
 
-
-
-
